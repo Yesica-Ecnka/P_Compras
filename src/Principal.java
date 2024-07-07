@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Principal {
@@ -22,6 +23,7 @@ public class Principal {
 
             if(compraRealizada){
                 System.out.println("Compra relizada!");
+                Collections.sort(tarjeta.getListaDeCompras());
                 System.out.println("Escriba 0 para salir o 1 para continuar: ");
                 salir = telclado.nextInt();
             }else{
